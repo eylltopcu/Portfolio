@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,7 @@
             --neon-pink: #ff2a6d;
             --neon-purple: #bd00ff;
             --dark-bg: #0a0a12;
+            --neon-purplelight: #ebb2ff;
         }
 
 
@@ -121,8 +122,8 @@
         .btn {
             display: inline-block;
             padding: 10px 20px;
-            color: var(--blue-dark);
-            border: 2px solid var(--blue-light);
+            color: var(--blue-light);
+            border: 2px solid var(--blue-dark);
             background: transparent;
             text-decoration: none;
             margin-top: 10px;
@@ -289,6 +290,9 @@
         p {
             text-align: center;
         }
+        .worktime {
+            color: var(--neon-purplelight);
+        }
     </style>
 </head>
 <body>
@@ -305,7 +309,7 @@
     </header>
 
     <section class="hero">
-        <h1>Computer Engineering Student <br>  Game Developer</h1>
+        <h1>Computer Engineering Student <br> Game Developer<br></h1>
         <p>I build games and interactive experiences.</p>
         <a href="#projects" class="btn">View Projects</a>
     </section>
@@ -352,17 +356,17 @@
         <div class="experience-grid">
             <div class="experience-item">
                 <h3>Game Developer - Fugesoft</h3>
-                <p>Jan 2025 – Present</p>
+                <p class="worktime">Jan 2025 – Present</p>
                 <p>Working remotely on a 2D fishing simulator using Unity. Developing minigames, implementing systems, and optimizing gameplay.</p>
             </div>
             <div class="experience-item">
                 <h3>Student Assistant - EMU</h3>
-                <p>Nov 2024 – Present</p>
+                <p class="worktime">Nov 2024 – Present</p>
                 <p>Assisting in lab sessions and helping students debug code for software and engineering courses.</p>
             </div>
             <div class="experience-item">
                 <h3>SAP Intern - TalentsUs</h3>
-                <p>Jul – Aug 2024</p>
+                <p class="worktime">Jul – Aug 2024</p>
                 <p>Participated in project meetings, gained hands-on experience in professional workflows and time management.</p>
             </div>
         </div>
@@ -389,5 +393,8 @@
     <footer>
         &copy; 2025 Eylül Topçu. All rights reserved.
     </footer>
+
+
+
 </body>
 </html>
