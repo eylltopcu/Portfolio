@@ -26,7 +26,12 @@ body {
   align-items: center;
   overflow-x: hidden;
   background-attachment: fixed;
-  zoom: 0.75;
+}
+
+@media (min-width: 768px) {
+  body {
+    zoom: 0.75;
+  }
 }
 
 .lang-switch {
