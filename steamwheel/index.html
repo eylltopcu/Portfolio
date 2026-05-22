@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Steam Game Picker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Steam Game Picker <span style="font-size: 2.2rem; transform: translateY(-3px);">🎡</span></h1>
+    
+    <div class="controls">
+      <input type="text" id="steamId" placeholder="Steam ID (Örn: 76561198...)" autocomplete="off" />
+      <label class="checkbox-wrapper">
+        <input type="checkbox" id="includeFamily" />
+        <span>Aile paylaşımlı oyunları dahil et</span>
+      </label>
+      <button id="fetchBtn">Oyunları Getir</button>
+    </div>
+
+    <div class="wheel-container">
+      <canvas id="wheel" width="500" height="500"></canvas>
+    </div>
+
+    <button id="spinButton" disabled>ÇARK YÜKLENİYOR</button>
+    
+    <div id="chosenGame" class="status-text">Lütfen Steam ID'nizi girerek oyunları çekin.</div>
+  </div>
+
+  <div class="panel-overlay" id="selectedGamePanel">
+    <div class="panel-content">
+      <h2 id="selectedGameName">Oyun Adı</h2>
+      <img id="selectedGameImage" src="" alt="Oyun Kapak Görseli" />
+      <br />
+      <button id="closePanelBtn" class="close-btn">TEŞEKKÜRLER, KAPAT</button>
+    </div>
+  </div>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
